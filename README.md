@@ -1,5 +1,6 @@
 # AngJSApp
 
+## Used to Type in a Name and display as full name! 
 <html>
    
    <head>
@@ -15,7 +16,7 @@
          Enter last name: <input type = "text" ng-model = "student.lastName"><br>
          <br>
          
-         Full Name of the Student : {{student.fullName()}}
+         Hi {{student.fullName()}}! 
       </div>
       
       <script>
@@ -29,7 +30,7 @@
                fullName: function() {
                   var studentFullName;
                   studentFullName = $scope.student;
-                  return studentFullName.firstName + " " + studentFullName.lastName;
+                  return " " + studentFullName.firstName + " " + studentFullName.lastName;
                }
             };
          });
@@ -37,3 +38,8 @@
       
    </body>
 </html>
+
+
+
+## Second program is to use filters in AngJS:
+
